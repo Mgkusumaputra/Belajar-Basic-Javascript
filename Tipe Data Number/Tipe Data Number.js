@@ -1,3 +1,4 @@
+        document.writeln("</br> </br> Javascript </br>")
         // Basis 10
         document.writeln("Basis 10 </br>");
         document.writeln(100);
