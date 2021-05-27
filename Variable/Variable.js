@@ -2,7 +2,6 @@ document.writeln("</br> </br> Javascript </br>");
 
 //Membuat Variable Menggunakan var 
         // Menggunakan Deklarasi Variable
-        document.writeln("Menggunakan Deklarasi Variable </br>")
         var keyboard1;
         var huruf1;
         var nomor1;
@@ -16,7 +15,6 @@ document.writeln("</br> </br> Javascript </br>");
         document.writeln(nomor1);
 
         // Langsung Menggunakan Value
-        document.writeln("</br> </br> Langsung Menggunakan Value </br>")
         var keyboard2 = "ABCDE 12345";
         var huruf2 = "ABCDE";
         var nomor2 = "12345";
@@ -27,7 +25,6 @@ document.writeln("</br> </br> Javascript </br>");
 
     //Membuat Variable Menggunakan let dan const   
         // let
-        document.writeln("</br> </br> Penggunaan let</br>")
         let keyboard3 = "ABCDEF 123456";
         let huruf3 = "ABCDEF";
         let nomor3 = "123456";
@@ -37,7 +34,6 @@ document.writeln("</br> </br> Javascript </br>");
         document.writeln(nomor3)
 
         // const
-        document.writeln("</br> </br> Penggunaan const</br>")
         const madeWith = "Javascript";
 
         document.writeln(madeWith);
