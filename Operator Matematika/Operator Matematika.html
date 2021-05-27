@@ -9,13 +9,33 @@
     
     <!-- Didalam Body -->
     <script>
-        let hasil = 10 + 10;
-
+    
+    //Aritmatika
+    
         // Pertambahanan
+        let hasil = 10 + 10; // 20
         document.writeln("<p>10 + 10 = " + hasil + "</p>")
-        let originalhasil = hasil;
+        let baseHasil = hasil; // <- 20
 
-        //
+        // Pengurangan
+        hasil -= 10; // 10
+        document.writeln("<p>" + baseHasil + " - 10 = " + hasil + "</p>")
+        baseHasil = hasil;
+
+        // Perkalian
+        hasil *= 3; // 30
+        document.writeln("<p>" + baseHasil + " x 2 = " + hasil + "</p>")
+        baseHasil = hasil;
+
+        // Pangkat
+        hasil **= 2; // 900
+        document.writeln("<p>" + baseHasil + "(pangkat)3 = " + hasil + "</p>")
+        baseHasil = hasil;
+
+        // Pembagian
+        hasil /= 2; // 450
+        document.writeln("<p>" + baseHasil + " / 2 = " + hasil + "</p>")
+        baseHasil = hasil;
 
     </script>
 
