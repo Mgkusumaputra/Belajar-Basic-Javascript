@@ -1,5 +1,3 @@
-document.writeln("</br> </br> Javascript </br>");
-
 //Aritmatika + Operator Augmented Assignments
 
 // Pertambahanan

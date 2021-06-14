@@ -1,5 +1,3 @@
-document.writeln("</br> </br> Javascript </br>");
-
 //Membuat Variable Menggunakan var 
         // Menggunakan Deklarasi Variable
         var keyboard1;

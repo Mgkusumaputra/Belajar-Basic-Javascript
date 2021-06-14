@@ -1,4 +1,3 @@
-document.writeln("</br> </br> Javascript </br>");
 
 // Sama Dengan
 let hasil = 5 == "5";
