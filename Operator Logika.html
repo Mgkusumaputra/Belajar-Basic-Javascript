@@ -7,19 +7,23 @@
   </head>
   <body>
     <script>
+      // Operator && - And
       const nilaiUjian = 80;
       const nilaiAbsensi = 90;
 
       const lulusUjian = nilaiUjian > 75;
       const lulusAbsensi = nilaiAbsensi > 75;
 
-      // Operator && - Dan
       const lulus = lulusUjian && lulusAbsensi;
-      document.writeln("<p>" + lulus + "</p>");
+      document.writeln(lulus);
 
-      // Operator || - Atau
+      // Operator || - Or
+      document.writeln("<br> <br>" + true || false);
+      document.writeln("<br>" + false || false);
 
-      // Operator ! - Kebalikan
+      // Operator ! - Not
+      document.writeln("<br> <br>" + !false);
+
     </script>
   </body>
 </html>
