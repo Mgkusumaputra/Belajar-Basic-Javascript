@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segmen String Template</title>
+</head>
+<body>
+    <script>
+        // Mengambil Variable
+        const name = "Mgkusumaputra";
+        const shortName = "MGKPs";
+
+        const template = `Name: ${name} ${shortName}`;
+        document.writeln(template);
+
+        // Expression
+        const pesertaDidik = "Nama Saya Budi";
+        const nilaiUjian = 90;
+
+        const template2 = `<br> Nama: ${pesertaDidik}, Lulus: ${nilaiUjian > 75}`;
+        document.writeln(template2);
+
+        // Multiline String
+        const multiline = `<br>
+Daftar Nilai Siswa:
+25
+78
+90
+65
+100`;
+
+        document.writeln("<pre>");
+        document.writeln(multiline);
+        document.writeln("</pre>");
+    </script>
+</body>
+</html>
