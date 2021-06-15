@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segmen Tipe Data Object</title>
+</head>
+<body>
+    <script>
+
+        const orang = {};
+
+        // Menambahkan Melalui Properties
+        const orang2 = {
+            "Nama" : "Tono Budi",
+            "Kelas" : "9.2",
+            "Nilai" : 80
+        };
+
+        console.table(orang2);
+
+        // Mengubah / Menambah Object
+        orang["Nama"] = "Tono Budi";
+        orang["Kelas"] = "9.2";
+        orang["Nilai"] = 80;
+
+        // Menghapus Object
+        delete orang["Nilai"];
+
+        console.table(orang);
+
+        // Mengakses Property Object
+        console.info(`Nama : ${orang.Nama}`)
+        console.info(`Kelas : ${orang.Kelas}`)
+        console.info(`Nilai : ${orang.Nilai}`)
+    </script>
+</body>
+</html>
