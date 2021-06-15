@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segmen Tipe Data Array</title>
+</head>
+<body>
+    <script>
+
+        let empty = [];
+        let filled = ["Abc", "123", "_-@"];
+
+        // Menambah Array
+        const keyboard = [];
+
+        keyboard.push("QWERTY");
+        keyboard.push("12345", "!@#$%");
+        keyboard.push("F1", "F2", "F3");
+
+        console.table(keyboard);
+
+        // Operasi Array
+            // Array.push(value) - Menambah Data Ke Array
+        
+            // Array.length - Mendapatkan Panjang Array
+
+            // Array[index] - Mendapat Data di Posisi Index
+            console.info(keyboard[0]);
+            console.info(keyboard[1]);
+            console.info(keyboard[2]);
+
+            // Array[index] = value - Mengubah Data di Posisi Index
+            keyboard[0] = "QWERTYU";
+
+            console.table(keyboard);
+            // delete array[index] - Menghapus Data di Posisi Index, tapi index tidak bergeser
+            delete keyboard[2];
+
+            console.table(keyboard);
+    </script>
+</body>
+</html>
