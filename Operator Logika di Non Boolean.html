@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segmen Operator Logika di Non Boolean</title>
+</head>
+<body>
+    <script>
+        // Or (||)
+            console.info("hello" || "");
+            console.info("" || []);
+            console.info("0" || "NOL");
+            console.info(0 || "NOL");
+            console.info(null || "Null.");
+            console.info(undefined || "Undefined.");
+            console.info(0 || false);
+
+            const orang = {
+                firstName: "",
+                lastName: "Kusuma Putra"
+            };
+
+            const user = orang.firstName || orang.lastName;
+            console.info(user);
+
+        // And (&&)
+            console.info("hello" && "");
+            console.info("" && []);
+            console.info("0" && "NOL");
+            console.info(0 && "NOL");
+            console.info(null && "Null.");
+            console.info(undefined && "Undefined.");
+            console.info("Undefined" && "Null");
+    </script>
+</body>
+</html>
