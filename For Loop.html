@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segmen For Loop</title>
+</head>
+<body>
+    <script>
+        /*  Syntax For Loop
+        for(init statement; kondisi; post statement) {
+
+        };
+
+        - Init Statement akan dieksekusi hanya sekali di awal sebelum loop
+        - Kondisi akan dilakukan pengecekan dalam setiap loop. Jika true loop akan dilakukan, jika false loop akan berhenti
+        - Post Statement akan dieksekusi setiap kali akhir loop
+        - Init Statement, Kondisi, dan Post Statement tidak wajib diisi. Jika kondisi tidak diisi, berarti kondisi selalu bernilai true
+        */
+
+        // No Stop Loop
+        /*  
+            for (; ;) {
+                alert("For Loop 1");
+            } 
+        */
+        
+        // Dengan Kondisi
+            let berhitung = 1;
+            for (; berhitung <= 10;) {
+                document.writeln(`<p>Hitungan Ke ${berhitung}</p>`)
+                berhitung++;
+            }
+        
+        // Dengan Init Statement
+            for (let counter = 1; counter <= 10;) {
+                document.writeln(`<p>Counter => ${counter}</p>`)
+                counter++;
+            }
+
+        // Dengan Post Statement
+            for (let counting = 1; counting <= 10; counting++) {
+                document.writeln(`<p>Counting: ${counting}</p>`);
+            }
+    </script>
+</body>
+</html>
