@@ -8,6 +8,21 @@
 <body>
     <script>
         
+        // If Else
+        const nilai = 75;
+        let hasil;
+
+        if (nilai >= 75) {
+            ucapan ="Selamat Kamu Berhasil Mengerjakan Ujian";
+        } else {
+            ucapan ="Kamu Harus Mengikuti Remedial";
+        }
+        document.writeln(`<p>${ucapan}</p>`);
+
+        // Ternary Operator
+        const ucapan2 = nilai >= 75 ? "Selamat Kamu Berhasil" : "Kamu Harus Melakukan Remdial..";
+
+        document.writeln(`<p>${ucapan2}</p>`);
     </script>
 </body>
 </html>
