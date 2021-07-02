@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segmen Nullish Coalescing Operator</title>
+</head>
+<body>
+    <script>
+
+        // Tidak Menggunakan Nullish Coalescing Operator
+        let parameter;
+
+        let data = parameter;
+        if (data === undefined || data === null) {
+            data = "Nilai Default";
+        } 
+
+        document.writeln(`<p>${data}<p>`);
+
+        // Menggunakan Nullish Coalescing Operator
+        data = parameter ?? "Nilai Default (2)"
+
+        document.writeln(`<p>${data}<p>`);
+    </script>
+</body>
+</html>
