@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segmen Optional Chaining</title>
+</head>
+<body>
+    <script>
+        const person = {};
+
+        // Menggunakan Optional Chaining
+        let country = person?.address?.country;
+
+        // Tidak Menggunakan Optional Chaining
+        // if (person.address !== undefined && person.address !== null) {
+        //     country = person.address.country
+        // }
+
+        document.writeln("Bekerja!!")
+        document.writeln(`<p>${country}<p>`);
+    </script>
+</body>
+</html>
