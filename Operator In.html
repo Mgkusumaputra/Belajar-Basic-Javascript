@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segmen Operator In</title>
+</head>
+<body>
+    <script>
+        const orang = {
+            firstName: "Garuda",
+            lastName: "Kusuma"
+        };
+
+        if ("firstName" in orang) {
+            alert(`Hai ${orang.firstName}`);
+        } else {
+            alert("Tidak Dikenal");
+        }
+
+
+        const siswa = {
+            firstName: "Budi",
+            lastName: undefined
+        };
+
+        if ("lastName" in siswa) {
+            alert(`Selamat Datang ${siswa.lastName}`);
+        } else {
+            alert("Authentikasi Gagal");
+        }
+
+
+        const absen = [null, "Dika", "Nurdin", "Cikal", null];
+
+        const hasilAbsen = 0 in absen;
+        document.writeln(`Siswa tersebut = ${hasilAbsen}`);
+    </script>
+</body>
+</html>
