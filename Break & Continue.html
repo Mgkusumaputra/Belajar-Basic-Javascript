@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segmen Break & Continue</title>
+</head>
+<body>
+    <script>
+
+        // Break
+        let counting = 1;
+        
+        while (true) {
+            document.writeln(`<p>Counting - ${counting}</p>`);
+            counting++;
+
+            if (counting > 10){
+                break;
+            }
+        }
+
+        // Continue
+        for (let i = 1; 1 <= 30; i++) {
+            if(1 % 2 === 0) {
+                continue;
+            }
+            document.writeln(`<p>Perulangan Ganjil = ${i}</p>`);
+        }
+    </script>
+</body>
+</html>
