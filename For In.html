@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Segmen For In</title>
+  </head>
+  <body>
+    <script>
+
+    // For In di Object
+      const siswa = {
+        firstName: "Muhammad Garuda",
+        lastName: "Kusuma P",
+        kelas: "8.5"
+      };
+
+      for (const dataDiri in siswa) {
+          document.writeln(`<p>${dataDiri} : ${siswa[dataDiri]}</p>`);
+      }
+
+    // For In di Array
+      const siswaAbsen = ["Hadir", "Hadir", "Tidak Hadir", "Hadir", "Hadir"]
+
+      for (const index in siswaAbsen){
+          document.writeln(`<p>${index} => ${siswaAbsen[index]}</p>`);
+      }
+    </script>
+    
+  </body>
+</html>
