@@ -13,12 +13,16 @@
       }
       helloWorld();
 
+
+
       // Function Parameter
       function nilaiUjian(mapel, nilai) {
         document.writeln(`<p>${mapel} => ${nilai}</p>`);
       }
       nilaiUjian("Matematika", "98");
       nilaiUjian("Bahasa Indonesia", "86");
+
+
 
       // Function Return Value
         // No.1
@@ -62,6 +66,8 @@
         const search = contains(array, searchItem);
         document.writeln(`<p>"${searchItem}" ${search}</p>`)
     
+
+
       // Optional Parameter
         function alamat(namaJalan, nomorRumah, kotaKab) {
             console.info(namaJalan);
@@ -70,6 +76,8 @@
         }
         alamat("abcd");
 
+
+
       // Default Parameter
         function signUp(nama, phoneNumber = "Belum DiIsi.", email = "Belum DiIsi.") {
             document.writeln(`<p>Nama (${nama}) - Nomor Telepon (${phoneNumber}) - Email (${email}) </p>`)
@@ -77,6 +85,8 @@
 
         signUp("Garuda", "+628123456789")
       
+
+
       // Function Sebagai Value
         // Function di Variable
         function sayHai(name) {
@@ -91,6 +101,23 @@
         function inputName(callback) {
           callback("Budi");
         }
+
+
+
+      // Anonymous Function
+      const hargaBarang = function (finalHarga) {
+        document.writeln(`<p>Total Harga Belanja: [ Rp${finalHarga},- ]</p>`)
+      }
+      hargaBarang(120000);
+
+        // Anonymous Function di Parameter
+        function giveMeName(callback1) {
+          callback1("Tono");
+        }
+        
+        giveMeName(function (nama1) {
+          document.writeln(`<p>Haihai ${nama1}</p>`)
+        });
     </script>
   </body>
 </html>
