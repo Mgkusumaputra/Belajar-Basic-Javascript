@@ -20,7 +20,49 @@
       nilaiUjian("Matematika", "98");
       nilaiUjian("Bahasa Indonesia", "86");
 
-      
+      // Function Return Value
+        // No.1
+        function sayHello(firstName, Lastname) {
+            const name = ` < ${firstName} ${Lastname} >`;
+            return name;
+        }
+        
+        const resultHello = sayHello("Muhammad", "Garuda");
+        document.writeln(`<p>Halo Selamat Datang ${resultHello}</p>`);
+
+        // No.2
+        function hasilUjian(value) {
+            if (value > 90) {
+                return "(A)";
+            } else if (value > 80) {
+                return "(B)";
+            } else if (value > 75) {
+                return "(C)";
+            } else {
+                return "(MENGULANG)";
+            }
+        }
+
+        const finalUjian = hasilUjian(76);
+        document.writeln(`<p>Halo ${resultHello}. Kamu Mendapat Nilai Ujian: ${finalUjian}</p>`)
+
+        // No.3
+        function contains(array, searchValue) {
+            for (const element of array) {
+                console.info(`Searching element > ${element}`)
+                if (element === searchValue) {
+                    return "Ditemukan!"
+                }
+            }
+            return "Tidak Ditemukan.";
+        }
+
+        const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+        const searchItem = 5;
+        const search = contains(array, searchItem);
+        document.writeln(`<p>"${searchItem}" ${search}</p>`)
+    
+
     </script>
   </body>
 </html>
