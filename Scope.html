@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segmen Scope</title>
+</head>
+<body>
+    <script>
+    // Materi Global Scope
+
+        // Global Scope
+        let counting = 0;
+
+        function getMe() {
+            // Local Scope | getMe
+            counting++;
+        }
+        getMe();
+        getMe();
+
+        console.info(counting);
+
+
+    // Materi Local Scope
+        
+        function satuu() {
+            // Local Scope satuu
+            let varSatuu = "Satu | 1";
+            console.log(varSatuu);
+        }
+
+        function duaa() {
+            // Local Scope satuu
+            let varDuaa = "Dua | 2";
+            console.log(varDuaa);
+        }
+
+        satuu();
+        duaa();
+
+
+    // Materi Nested Function
+
+        function a() {
+            let aVar = "Im Aaaa";
+
+            function aNested() {
+                console.log(aVar);
+            }
+
+            aNested();
+
+        }
+
+        a();
+    </script>
+</body>
+</html>
