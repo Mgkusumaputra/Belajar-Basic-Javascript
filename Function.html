@@ -70,12 +70,27 @@
         }
         alamat("abcd");
 
-        // Default Parameter
+      // Default Parameter
         function signUp(nama, phoneNumber = "Belum DiIsi.", email = "Belum DiIsi.") {
             document.writeln(`<p>Nama (${nama}) - Nomor Telepon (${phoneNumber}) - Email (${email}) </p>`)
         }
 
         signUp("Garuda", "+628123456789")
+      
+      // Function Sebagai Value
+        // Function di Variable
+        function sayHai(name) {
+          document.writeln(`<p>Haloo! ${name}</p>`)
+        }
+        sayHai("Garuda");
+
+        const hai = sayHai;
+        hai("Gardu");
+
+        // Function di Parameter
+        function inputName(callback) {
+          callback("Budi");
+        }
     </script>
   </body>
 </html>
