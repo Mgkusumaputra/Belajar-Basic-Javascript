@@ -118,6 +118,21 @@
         giveMeName(function (nama1) {
           document.writeln(`<p>Haihai ${nama1}</p>`)
         });
+      
+
+
+      // Function dalam Function | Nested Function
+      function package() {
+        
+        function isi() {
+          console.log("Package > Isi");
+        }
+
+        isi();
+        isi();
+      };
+
+      package();
     </script>
   </body>
 </html>
