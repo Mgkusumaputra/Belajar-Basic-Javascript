@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segmen With Statement</title>
+</head>
+<body>
+    <script>
+        // Tanpa With Statement
+            const keyboard1 = {
+                Alphabet: "QWERTY",
+                Number: "12345",
+                Character: "!@#$%"
+            };
+
+            console.info(keyboard1.Alphabet);
+            console.info(keyboard1.Number);
+            console.info(keyboard1.Character);
+
+        // Dengan With Statement
+            const keyboard2 = {
+                Alphabet: "* QWERTY",
+                Number: "* 12345",
+                Character: "* !@#$%"
+            };
+
+            with (keyboard2) {
+                console.log(Alphabet);
+                console.log(Number);
+                console.log(Character);
+            }
+    </script>
+</body>
+</html>
