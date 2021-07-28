@@ -158,6 +158,35 @@
       }
 
       console.info(factRecurs(5));
+
+
+
+    // Function Generator
+      // No.1
+      function* nameGenerator() {
+        yield "Budi";
+        yield "Toni";
+        yield "Joko";
+      }
+      
+      const generateName = nameGenerator();
+      for (const nameGeneratorFinal of generateName) {
+        console.info(nameGeneratorFinal);
+      }
+
+      // No.2
+      function* ganjilGenerator(valueGanjil) {
+        for (let i = 1; i <= valueGanjil; i++) {
+          if (i % 2 === 1) {
+            yield i;
+          }
+        }
+      }
+
+      const bilanganGanjil = ganjilGenerator(55);
+      for (const ganjil of bilanganGanjil) {
+        console.info(ganjil);
+      }
     </script>
   </body>
 </html>
