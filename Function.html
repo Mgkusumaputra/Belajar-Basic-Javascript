@@ -133,6 +133,31 @@
       };
 
       package();
+
+
+
+    // Recursive Function
+      // Tanpa Recursive
+      function factorial(factValue) {
+        let factResult = 1;
+        for (let i = 1; i <= factValue; i++) {
+          factResult *= i; 
+        }
+        return factResult;
+      }
+
+      console.info(factorial(5));
+
+      // Dengan Recursive
+      function factRecurs(fcValue) {
+        if (fcValue === 1) {
+          return 1;
+        } else {
+          return fcValue * factRecurs(fcValue - 1);
+        }
+      }
+
+      console.info(factRecurs(5));
     </script>
   </body>
 </html>
