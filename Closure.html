@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segmen Closure</title>
+</head>
+<body>
+    <script>
+        function createAdder(value) {
+            const cust = "Cecing";
+
+            function add(param) {
+                console.info(cust);
+                return value + param;
+            }
+
+            return add;
+        }
+
+        const adderValue = createAdder(2);
+        console.info(adderValue(13));
+    </script>
+</body>
+</html>
