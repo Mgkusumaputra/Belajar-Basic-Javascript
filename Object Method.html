@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segmen Object Method</title>
+</head>
+<body>
+    <script>
+    // Object Dengan Method
+        const absensi = {
+            nama: "Garuda",
+            alertAbsen: function (nama) {
+                alert(`Selamat Datang ${nama}`);
+            }
+        };
+
+        absensi.alertAbsen(`Kusuma`);
+
+
+    // Menambah Method ke Object
+        nilaiAbsensi = {
+            rata_rata: 0
+        };
+
+        nilaiAbsensi.outNilai = function (rata_rata) {
+            document.writeln(`Rata-Rata Nilai Absensi => ${rata_rata}`)
+        }
+
+        nilaiAbsensi.outNilai(`98`);
+    </script>
+</body>
+</html>
