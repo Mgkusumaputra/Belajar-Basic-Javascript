@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segmen This</title>
+</head>
+<body>
+    <script>
+        // GLobal
+        console.info(this); // Window
+
+
+        // Function
+        function tester() {
+            console.info(this); // Window
+
+            // Nested Function
+            function nest() {
+                console.info(this); // Window
+            }
+
+            nest();
+        }
+
+        tester();
+
+
+        // Object Method
+        const orang = {
+            nama: "Garuda",
+            sayHello: function (nama) {
+                console.info(`Hello ${this.nama} ${nama}`);
+            }
+        }
+
+        orang.sayHello("Kusuma");
+    </script>
+</body>
+</html>
