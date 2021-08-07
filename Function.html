@@ -187,6 +187,48 @@
       for (const ganjil of bilanganGanjil) {
         console.info(ganjil);
       }
+
+
+
+    // Arrow Function
+      // Dengan Block {}
+      const sayBye = (name) => {
+        const bye = `Byee.. ${name}`;
+        console.log(bye);
+      };
+
+      sayBye("Garuda");
+
+      // Tanpa Block {}
+      const panggil = (memanggil) => console.log(`Woy Woy ${memanggil}`);
+      panggil("Tono");
+
+      // Parameter hanya 1
+      const panggil2 = memanggil2 => console.log(`Woy Woy ${memanggil2}`);
+    
+      panggil2("Budi");
+
+
+    // Arrow Function Return Value
+      // Dengan Block {}
+      const berhitung1 = (satu, dua) => {
+        return satu + dua
+      }
+
+       console.info(berhitung1(50, 200));
+      
+      // Tanpa Block {}
+      const berhitung2 = (satuu, duaa) => satuu + duaa;
+
+      console.info(berhitung2(150, 200));
+
+
+    // Arrow Function Sebagai Parameter
+      function sebutNama(inNama) {
+        inNama("Baba");
+      }
+
+      sebutNama((outNama) => console.info(`Halo! Hai ${outNama}`));
     </script>
   </body>
 </html>
