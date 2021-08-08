@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segmen Getter & Setter</title>
+</head>
+<body>
+    <script>
+        const person = {
+            firstName: "Muhammad Garuda",
+            lastName: "Kusuma Putra",
+            // Getter
+            get fullName() {
+                return `${this.firstName} ${this.lastName}`;
+            },
+            // Setter
+            set fullName(value) {
+                const array = value.split(" ");
+                this.firstName = array[0];
+                this.lastName = array[1];
+            }
+        };
+
+
+        person.fullName = "Joko Budi";
+        console.table(person);
+
+        person.fullName = "Muhammad Garuda";
+        console.table(person);
+    </script>
+</body>
+</html>
