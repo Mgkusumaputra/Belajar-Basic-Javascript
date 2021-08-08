@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segmen Strict Mode</title>
+</head>
+<body>
+    <script>
+        function useStrict() {
+            'use strict'
+            const person = {
+                firstName: "Muhammad Garuda"
+            };
+
+            // Error
+            with (person) {
+                console.info(firstName);
+            }
+        };
+
+        useStrict();
+    </script>
+</body>
+</html>
