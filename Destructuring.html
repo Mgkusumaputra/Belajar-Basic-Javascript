@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segmen Destucturing</title>
+</head>
+<body>
+    <script>
+    // Destucturing di Variable
+        // Destructuring Array
+        const topMusic = ["STAY", "Beggin'", "Industry Baby", "Bad Habits", "good 4 u", "Happier Than Ever", "Take My Breath", "Volví"]
+        const [no1, no2, no3, no4, no5, ...under5] = topMusic;
+
+        console.log(no1);
+        console.log(no2);
+        console.log(no3);
+        console.log(no4);
+        console.log(no5);
+        console.log(under5);
+
+
+        // Destucturing Object
+        const person = {
+            firstName: "Muhammmad Garuda",
+            lastName: "Kusuma Putra",
+            address: {
+                street: "Jl. Abcdefg",
+                city: "Bandung",
+                country: "Indonesia"
+            },
+            hobby: "Playing Games",
+        }
+
+        const {firstName, lastName, address, ...others} = person;
+        console.info(firstName);
+        console.info(lastName);
+        console.info(address);
+        console.info(others);
+
+
+        // Destucturing Nested Object
+        const top3 = {
+            stay: {
+                artist: "The Kid LAROI",
+                streams: "8,753,889"
+            },
+            beggin: {
+                artist: "Måneskin",
+                streams: "6,359,127"
+            },
+            industry_baby: {
+                artist: "Lil Nas X",
+                streams: "5,987,636"
+            }
+        }
+
+        const {stay, beggin: {artist, streams}, industry_baby} = top3;
+        console.log(stay);
+        console.log(artist);
+        console.log(streams);
+        console.log(industry_baby);
+
+
+
+    // Destucturing di Function Parameter
+        // Destucturing Function Object
+        function top3Artist({one, two, three}){
+            console.info(one);
+            console.info(two);
+            console.info(three);
+        }
+
+        const artistList = {
+            one: "The Kid LAROI",
+            two: "Måneskin",
+            three: "Lil Nas X",
+        };
+
+        top3Artist(artistList);
+
+
+        // Destucturing Function Array
+        function pertambahan([first, second]) {
+            return first + second;
+        }
+
+        console.info(pertambahan([5,5]));
+        console.info(pertambahan([15,15]));
+
+
+
+    // Destucturing Default Value
+        // Destucturing Default Value di Array
+        const number = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        const [one1 = "1", two2 = "2", three3 = "3", four4 = "4", five5 = "5", six6 = "6", seven7 = "7", eight8 = "8", nine9 = "9", ten10 = "10"] = number;
+
+        console.info(one1);
+        console.info(two2);
+        console.info(three3);
+        console.info(four4);
+        console.info(five5);
+        console.info(six6);
+        console.info(seven7);
+        console.info(eight8);
+        console.info(nine9);
+        console.info(ten10);
+
+
+        // Destucturing Default Value di Object
+        const person2 = {
+            firstName2: "Muhammmad Garuda",
+            lastName2: "Kusuma Putra",
+            hobby2: "Playing Games",
+        }
+
+        const {firstName2, lastName2 = "Belum Ditambahkan", ...others2} = person2;
+        console.info(firstName2);
+        console.info(lastName2);
+        console.info(others2);
+
+
+
+    // Destucturing Dengan Variable Lain
+        const person3 = {
+                firstName3: "Muhammmad Garuda",
+                lastName3: "Kusuma Putra",
+                hobby3: "Playing Games",
+            }
+
+            const {firstName3: namaDepan, 
+                   lastName3: namaBelakang = "Belum Ditambahkan", 
+                   hobby3: hobi} = person3;
+
+            console.info(namaDepan);
+            console.info(namaBelakang);
+            console.info(hobi);
+    </script>
+</body>
+</html>
