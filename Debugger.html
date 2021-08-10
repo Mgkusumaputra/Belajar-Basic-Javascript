@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segmen Debugger</title>
+</head>
+<body>
+    <script>
+        // No.1
+        function createName(firstName, lastName) {
+            // debugger;
+            const fullName = `${firstName} ${firstName}`
+            return fullName;
+        }
+
+        const name = createName('Muhammad Garuda', 'Kusuma Putra');
+        console.info(name);
+
+
+        // No.2
+        function sum(...numbers) {
+            debugger;
+            let total = 0;
+            for (const number of numbers) {
+                total += number;
+            }
+            return total;
+        };
+
+        console.info(sum(2, 2, 2, 2, 2))
+    </script>
+</body>
+</html>
